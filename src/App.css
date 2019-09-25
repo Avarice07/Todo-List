@@ -1,0 +1,176 @@
+body {
+    background-color: whitesmoke;
+    font-family: 'Fredericka the Great', cursive;
+}
+
+h1{
+   font-size: 100px;
+   color:rgba(128, 128, 128, 0.15);
+   text-align: center;
+   margin-bottom: 0;
+   text-rendering: optimizeLegibility;
+   font-weight: 600;
+ }
+
+
+
+ul{
+  list-style: none;
+}
+
+input[type=checkbox]{
+    height: 25px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+
+
+
+button{
+  margin: 0;
+	padding: 0;
+	border: 0;
+	background: none;
+	font-size: 100%;
+	vertical-align: baseline;
+	font-family: inherit;
+	font-weight: inherit;
+	color: inherit;
+	appearance: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.todo-list {
+    background-color: #fdef96;
+    margin: auto;
+    margin-top: 3%;
+    width: 50%;
+    border: 1px solid #efefef;
+    box-shadow:
+    /* The top layer shadow */
+        0 1px 1px rgba(0,0,0,0.15),
+            /* The second layer */
+        0 10px 0 -5px #fdef96,
+            /* The second layer shadow */
+        0 10px 1px -4px rgba(0,0,0,0.15),
+            /* The third layer */
+        0 20px 0 -10px #fdef96,
+            /* The third layer shadow */
+        0 20px 1px -9px rgba(0,0,0,0.15);
+    padding: 30px;
+    overflow-x:hidden;
+
+
+}
+
+.todo-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px 20px 0;
+    border-bottom: 1px solid rgb(187,244,15);
+    font-weight: 100;
+    font-size: 25px;
+    color: #333333;
+  }
+
+.todo-item p{
+  overflow: hidden;
+  width:250px;
+
+
+}
+
+.mid{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.mid>input{
+  font-size: 25px;
+  width: 30%;
+  margin-right:30px;
+  color: black;
+
+
+}
+.mid>input[placeholder] {
+  text-align: center;
+
+}
+.mid>input:hover {
+  background-color: #f0dd92;
+  color: #444444;
+
+
+}
+.done {
+ font-style:italic;
+ color:#d9d9d9;
+ text-decoration:line-through;
+}
+
+
+.destroy {
+	-moz-box-shadow:inset 0 1px 0 0 #fff6af;
+	-webkit-box-shadow:inset 0 1px 0 0 #fff6af;
+	box-shadow:inset 0 1px 0 0 #fff6af;
+	background-color:#fdef96;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:100%;
+	display:inline-block;
+	cursor:pointer;
+	color:red;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+  margin-left:20px;
+	padding:6px 13px;
+	text-decoration:none;
+	text-shadow:0 1px 0 #ffee66;
+  cursor:pointer;
+}
+.destroy:hover{
+  background-color:#e16363;
+  color: black;
+}
+
+.destroy:active {
+	position:relative;
+	top:1px;
+}
+.footer>p{
+
+    float: left;
+    margin-top:3px;
+
+}
+.footer>button{
+
+  float:right;
+  margin-top:-21px;
+}
+.select{
+  display:inline;
+  margin-left:10px;
+
+}
+.select>a{
+  text-decoration: none;
+  color: black;
+}
+.select>a:focus{
+  text-decoration: none;
+  border: 1px solid red;
+  color: black;
+}
+.footer>ul{
+  margin-left:35%;
+  margin-bottom:8px;
+}
+
+.nothing{
+  display: none;
+}
